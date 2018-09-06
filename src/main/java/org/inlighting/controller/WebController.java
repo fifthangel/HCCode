@@ -26,6 +26,12 @@ public class WebController {
         this.userService = userService;
     }
 
+    /**
+     * 1
+     * @param username
+     * @param password
+     * @return
+     */
     @PostMapping("/login")
     public ResponseBean login(@RequestParam("username") String username,
                               @RequestParam("password") String password) {
